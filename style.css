@@ -1,0 +1,53 @@
+body, h1, h2, h3, p {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 3vw;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 8vw;
+}
+
+.grid-container {
+    display: grid;
+    background-color: red;
+    grid-auto-rows: minmax(100vh, auto);
+}
+
+.grid-item {
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* padding-left: 6vw; */
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+/* .contents {
+    background-color: red;
+    min-height: 100vh;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    background-color: yellow;
+    min-height: 300px;
+
+    min-width: 300px;
+    max-width: 50vw;
+    margin: 30px;
+
+    
+} */
