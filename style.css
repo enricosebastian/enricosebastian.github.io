@@ -85,6 +85,7 @@ svg {
 
 a {
     text-decoration: none;
+    color: var(--font-color);
 }
 
 a:visited {

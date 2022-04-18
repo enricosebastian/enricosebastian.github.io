@@ -13,3 +13,7 @@ for(var i=0; i<texts.length; i++) {
         event.target.style.color = "";
     })
 }
+
+if(window.location.href.indexOf("#contacts") > -1) {
+    alert("You're in contacts");
+}
