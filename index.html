@@ -1,34 +1,82 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="sidebartest.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-    <title>This is a test</title>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="grid-item main">
-            <div class="greetings">
-                <h1>hello, world</h1>
-                <p>me | projects | experience | contacts</p>
+    <div class="container">
+        <div class="sidebar">
+            <nav class="sidebar-contents">
+                <ul>
+                    <li>
+                        <a class= "sidebar-link" href="#home">
+                            <svg id="person-svg" data-name="person-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.62 140.09">
+                            <path class="cls-1" d="M86,55a26.22,26.22,0,1,0-22,0A33.44,33.44,0,0,0,41.69,86.4V133a12,12,0,0,0,12,12H96.31a12,12,0,0,0,12-12V86.4A33.44,33.44,0,0,0,86,55Z" transform="translate(-41.69 -4.96)"/>
+                            </svg>
+                            <span class="hidden-text">home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class= "sidebar-link" href="#about-me">
+                            <svg id="person-svg" data-name="person-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.62 140.09">
+                            <path class="cls-1" d="M86,55a26.22,26.22,0,1,0-22,0A33.44,33.44,0,0,0,41.69,86.4V133a12,12,0,0,0,12,12H96.31a12,12,0,0,0,12-12V86.4A33.44,33.44,0,0,0,86,55Z" transform="translate(-41.69 -4.96)"/>
+                            </svg>
+                            <span class="hidden-text">about me</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class= "sidebar-link" href="#projects">
+                            <svg id="projects-svg" data-name="projects-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.45 129.45">
+                            <path class="cls-1" d="M127.47,83.91a42.35,42.35,0,0,0,10.58-41.72L114.32,65.92c-6.39,6.38-16.47,6.75-22.4.82l-8.66-8.66c-5.93-5.93-5.56-16,.82-22.4L107.81,12A42.16,42.16,0,0,0,58.7,72.29L13.31,117.68a10.44,10.44,0,0,0,0,14.71l4.3,4.3a10.44,10.44,0,0,0,14.71,0L77.71,91.3A42.63,42.63,0,0,0,127.47,83.91ZM21.7,128.3a6.75,6.75,0,1,1,9.54,0A6.75,6.75,0,0,1,21.7,128.3Z" transform="translate(-10.28 -10.28)"/>
+                            </svg>
+                            <span class="hidden-text">projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class= "sidebar-link" href="#experience">
+                            <svg id="experience-svg" data-name="experience-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.67 95.15">
+                            <path class="cls-1" d="M136.58,53.6l10.26-4.12L75.9,26.12,3.16,48.47,75,78.35,134.59,54.4V83.93c-1.48,2-4.11,6.36-4.11,11.37,0,7,2.29,7.56,5.11,7.56s5.1-.58,5.1-7.56c0-5-2.63-9.33-4.11-11.37Z" transform="translate(-3.16 -26.12)"/><path class="cls-1" d="M29.77,68.29v38.27c0,8.13,20.25,14.71,45.23,14.71s45.23-6.58,45.23-14.71V68.92L75,87.09Z" transform="translate(-3.16 -26.12)"/>
+                            </svg>
+                            <span class="hidden-text">experience</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class= "sidebar-link" href="#contacts">
+                            <svg id="contacts-svg" data-name="contacts-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.35 95.72">
+                            <path class="cls-1" d="M75.75,89.86l60.66-56.48a24.64,24.64,0,0,0-16.54-6.24H30.13a24.75,24.75,0,0,0-15.77,5.57Z" transform="translate(-6.33 -27.14)"/><path class="cls-1" d="M143.67,49.3a20.68,20.68,0,0,0-2-8.89l-39.95,37.2,38,35.36a21,21,0,0,0,4-12.27Z" transform="translate(-6.33 -27.14)"/><path class="cls-1" d="M8.8,39.46A20.87,20.87,0,0,0,6.33,49.3v51.4a21,21,0,0,0,4.38,12.8l38.8-36.13Z" transform="translate(-6.33 -27.14)"/><path class="cls-1" d="M95.31,83.58,82.15,95.83l-6.4,6L55.92,83.34l-38.66,36a24.94,24.94,0,0,0,12.87,3.53h89.74A25,25,0,0,0,133.33,119Z" transform="translate(-6.33 -27.14)"/>
+                            </svg>
+                            <span class="hidden-text">contacts</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="content">
+            <div class="section" id="home">
+                <h1><span class="text">hello</span><span class="text">,</span> <span class="text">world</span> (WIP)</h1>
+                <p><a href="#about-me"><span class="text">me</span></a> | <a href="#projects"><span class="text">projects</span></a> | <a href="#experience"><span class="text">experience</span></a> | <a href="#contacts"><span class="text">contacts</span></a></p>
+            </div>
+            <div class="section" id="about-me">about me</div>
+            <div class="section" id="projects">
+                projects
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos maxime consectetur, eum veritatis alias. Repudiandae dolor sapiente nulla assumenda aliquam perferendis quisquam! Ad atque iusto nesciunt eaque mollitia earum natus? Cum magni expedita maiores eius eaque rerum nostrum explicabo ad, repellat minus incidunt enim earum vitae a corrupti? At aperiam, numquam accusamus voluptate ex reprehenderit? Perspiciatis ipsa nulla quidem praesentium minima, repellat laborum eum voluptates accusamus aut fuga sunt possimus soluta commodi ipsum eos cum corrupti libero fugit cumque distinctio incidunt facilis sed. Modi, mollitia! Ipsa numquam iusto in ad voluptas nobis. Amet, quos corporis eius adipisci fugiat possimus.
+            </div>
+            <div class="section" id="experience">
+                experience
+            </div>
+            <div class="section" id="contacts">
+                contact me
             </div>
         </div>
-        <div class="grid-item intro">i am enrico sebastian+tech stack</div>
-        <div class="grid-item projects">my projects</div>
-        <div class="grid-item experience">experience</div>
-        <div class="grid-item contact_me">contact me</div>
     </div>
-    <!-- <nav class="navbar">
-        <ul>
-            <li>me</li>
-            <li>pr</li>
-            <li>ex</li>
-        </ul>
-    </nav> -->
+    <script src="script.js"></script>
 </body>
 </html>
