@@ -3,5 +3,57 @@
 
 .body {
     min-height: 500px;
-    background-color: green;
+
+    h1 {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        width: 100%;
+
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 2px solid;
+    }
+
+    .experiences{
+
+        .experiences-item {
+            margin-bottom: 25px;
+
+            .main-line {
+                display: grid;
+                grid-template-columns: 50fr 50fr;
+
+                .duration {
+                    text-align: right;
+                    font-weight: normal;
+                }
+            }
+
+            h2 {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            ul {
+                margin: 0px;
+                padding: 0px;
+                padding-left: 20px;
+
+                li {
+                    list-style: none;
+                    font-size: 20px;
+
+                }
+            }
+
+            .role {
+                font-weight: normal;
+            }
+        }
+    }
 }

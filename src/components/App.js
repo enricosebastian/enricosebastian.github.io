@@ -7,7 +7,7 @@ import '../styles/App.scss';
 
 export default function App() {
     return (
-        <div class="wrapper">
+        <div className="wrapper">
             <Header/>
             <Body/>
             <Footer/>
