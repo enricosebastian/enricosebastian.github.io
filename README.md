@@ -20,5 +20,6 @@ This is my Github pages repository built with React.js and Sass. You can view th
 ## To do
 - Add socials in footer
 - Actually fill up responsibility texts
+- Ensure view dynamically changes per window size
 - Create more reusable components
     - Improve DescriptionItems to support array of descriptions in a single item (e.g. two roles in one job)
