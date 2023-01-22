@@ -3,7 +3,7 @@ import SectionItem from "./SectionItem";
 
 export default function Education() {
     return (
-        <div className="section">
+        <div className="section" id="education">
             <h1>education</h1>
             <SectionItem 
                 mainHeading={"de la salle university - manila"} 

@@ -3,7 +3,7 @@ import SectionItem from "./SectionItem";
 
 export default function Experience() {
     return (
-        <div className="section">
+        <div className="section" id="experience">
             <h1>experience</h1>
             <SectionItem 
                 mainHeading={"the lasallian"} 

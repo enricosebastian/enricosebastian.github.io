@@ -3,7 +3,7 @@ import SectionItem from "./SectionItem";
 
 export default function Projects() {
     return (
-        <div className="section">
+        <div className="section" id="projects">
             <h1>projects</h1>
             <SectionItem 
                 mainHeading={"cat reddit website"}
