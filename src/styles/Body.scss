@@ -19,9 +19,11 @@
         border-bottom: 2px solid;
     }
 
-    .experiences{
+    .section {
+        padding-top: 20px;
+        padding-bottom: 20px;
 
-        .experiences-item {
+        .section-item {
             margin-bottom: 25px;
 
             .main-line {
@@ -51,7 +53,7 @@
                 }
             }
 
-            .role {
+            .details {
                 font-weight: normal;
             }
         }

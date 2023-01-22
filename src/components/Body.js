@@ -1,5 +1,7 @@
 import React from "react";
-import Experiences from "./Experiences";
+import Experience from "./Experience";
+import Education from "./Education";
+import Projects from "./Projects";
 import "../styles/Body.scss";
 
 export default function Body() {
@@ -7,7 +9,13 @@ export default function Body() {
         <div className="body">
             <hr />
             <hr />
-            <Experiences/>
+            <Experience/>
+            <hr />
+            <hr />
+            <Education/>
+            <hr />
+            <hr />
+            <Projects/>
         </div>
     );
 }
