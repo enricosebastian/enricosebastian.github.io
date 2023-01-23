@@ -1,16 +1,15 @@
-export const education = [{
-    mainHeading: "de la salle university - manila",
-    duration: "Expected 2023",
-    secondaryHeading: "electronics engineer, minor in software",
-    descriptionItems: ["cgpa: 3.03/4.00", "courses: software, mobile, intelligent systems"]
+export const projects = [{
+    mainHeading: "reddit-based website",
+    secondaryHeading: "node.js, javascript, mongodb, heroku, html/css",
+    descriptionItems: [
+        "Built the entire backend responsible for handling upvoting, file uploading, and deployment", 
+        "Used JavaScript to update frontend data harmoniously with the MongoDB database"
+    ]
 },{
-    mainHeading: "de la salle university - manila",
-    duration: "Expected 2023",
-    secondaryHeading: "electronics engineer, minor in software",
-    descriptionItems: ["cgpa: 3.03/4.00", "courses: software, mobile, intelligent systems"]
-},{
-    mainHeading: "de la salle university - manila",
-    duration: "Expected 2023",
-    secondaryHeading: "electronics engineer, minor in software",
-    descriptionItems: ["cgpa: 3.03/4.00", "courses: software, mobile, intelligent systems"]
+    mainHeading: "class attendance mobile app",
+    secondaryHeading: "java, firebase",
+    descriptionItems: [
+        "Main backend developer that set up image uploading, account creation, and attendance tracking via Firebase", 
+        "Handled user connectivity to the database using SharedPreferences implementation"
+    ]
 },];
