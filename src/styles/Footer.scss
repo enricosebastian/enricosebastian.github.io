@@ -22,5 +22,13 @@
     .details {
         width: 80%;
         text-align: center;
+
+        a {
+            svg {
+                &:hover {
+                    fill: $light-gray;
+                }
+            }
+        }
     }
 }

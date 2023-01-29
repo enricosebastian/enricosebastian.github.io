@@ -49,6 +49,10 @@
             margin-right: 12px;
             text-align: center;
             cursor: pointer;
+
+            &:hover {
+                color: $light-gray;
+            }
         }
     }
 }
