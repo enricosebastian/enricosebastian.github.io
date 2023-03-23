@@ -9,6 +9,8 @@ This is my Github pages repository built with React.js and Sass. You can view th
 ## How to update Github pages to latest build
 1. Ensure that there is no pre-existing gh-pages branch
 1. With the latest build in your local machine, run `npm run deploy` to push to newly created gh-pages branch
+1. Go to the Pages option in the repo settings (Code and automation category) and build choose the gh-pages as the branch for building
+1. Save configuration and wait for a few minutes
 1. Check if the website is in its updated form at `https://enricosebastian.github.io/`
 
 ## Technologies used
