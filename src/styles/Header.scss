@@ -50,6 +50,11 @@
             text-align: center;
             cursor: pointer;
 
+            @media (max-width: 700px) {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
             &:hover {
                 color: $light-gray;
             }
