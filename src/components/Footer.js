@@ -26,7 +26,7 @@ export default function Footer() {
                 </a>
 
                 <br/>
-                created by enrico sebastian salazar<br/>powered by chocolates & procrastination
+                created by enrico sebastian salazar<br/>powered by chocolates & nhilism
             </div>
         </div>
     );
