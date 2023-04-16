@@ -4,9 +4,9 @@ export const experiences = [{
     duration: "04/2023 - Present",
     secondaryHeading: "full stack developer",
     descriptionItems: [
-        "created reusable components placed through the website's home page via react.js", 
-        "integrated the wordpress api to create dynamic components from user-generated posts via hooks", 
-        "Ensured website design resizing for different web browser sizes and devices"
+        "overhauled and redesigned the site's backend to use the Next.js framework", 
+        "created and maintained a headless cms implementation of the new site, which uses the wordpress api for content storage and next.js for frontend and backend processes", 
+        "currently maintaining the project's codebase via cpanel hosting platform"
     ]
 }, {
     duration: "10/2022 - 04/2023",
