@@ -9,6 +9,7 @@ export default function Experience() {
             duration = {experience.duration}
             secondaryHeading = {experience.secondaryHeading}
             descriptionItems = {experience.descriptionItems}
+            link = {experience.link}
         />);
 
     return (

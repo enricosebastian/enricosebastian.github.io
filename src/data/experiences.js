@@ -1,6 +1,15 @@
 export const experiences = [{
     mainHeading: "the lasallian",
-    duration: "10/2022 - Present",
+    link: "https://www.thelasallian.com",
+    duration: "04/2023 - Present",
+    secondaryHeading: "full stack developer",
+    descriptionItems: [
+        "created reusable components placed through the website's home page via react.js", 
+        "integrated the wordpress api to create dynamic components from user-generated posts via hooks", 
+        "Ensured website design resizing for different web browser sizes and devices"
+    ]
+}, {
+    duration: "10/2022 - 04/2023",
     secondaryHeading: "front-end developer",
     descriptionItems: [
         "created reusable components placed through the website's home page via react.js", 
@@ -9,6 +18,7 @@ export const experiences = [{
     ]
 },{
     mainHeading: "willis towers watson",
+    link: "https://www.wtwco.com",
     duration: "04/2022 - 06/2022",
     secondaryHeading: "full stack developer",
     descriptionItems: [

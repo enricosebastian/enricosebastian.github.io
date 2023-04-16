@@ -30,6 +30,28 @@
                 display: grid;
                 grid-template-columns: auto auto;
 
+                a {
+                    text-decoration: none;
+
+                    h2 {
+                        color: black;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+
+                .duration {
+                    text-align: right;
+                    font-weight: normal;
+                }
+            }
+
+            .secondary-line {
+                display: grid;
+                grid-template-columns: auto auto;
+
                 .duration {
                     text-align: right;
                     font-weight: normal;
