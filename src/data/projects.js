@@ -23,8 +23,8 @@ export const projects = [{
         "trained thousands of images of plastic bottles using tensorflow lite and model maker", 
         "implemented wireless acknowledgement system between drones and base station"
     ],
-    link: "https://enricosebastian.github.io/expense-tracker-challenge/",
-    imgSrc: "/images/expense-tracker.jpg"
+    link: "https://calculator-application-challenge.vercel.app/",
+    imgSrc: "/images/calculator-app.jpg"
 }, {
     mainHeading: "simple expense tracker",
     secondaryHeading: "tensorflow lite, arduino, raspberry pi, python",
