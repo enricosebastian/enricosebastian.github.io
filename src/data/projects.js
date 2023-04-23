@@ -17,15 +17,15 @@ export const projects = [{
     link: "https://github.com/enricosebastian/catsallian-website",
     imgSrc: "/images/catsallian.png"
 },{
-    mainHeading: "autonomous trash collecting drone system",
-    secondaryHeading: "tensorflow lite, arduino, raspberry pi, python",
+    mainHeading: "calculator challenge",
+    secondaryHeading: "next.js",
     descriptionItems: [
         "trained thousands of images of plastic bottles using tensorflow lite and model maker", 
         "implemented wireless acknowledgement system between drones and base station"
     ],
-    link: "https://github.com/enricosebastian/thesis",
-    imgSrc: "/images/lindda-control-panel.jpg"
-},{
+    link: "https://enricosebastian.github.io/expense-tracker-challenge/",
+    imgSrc: "/images/expense-tracker.jpg"
+}, {
     mainHeading: "simple expense tracker",
     secondaryHeading: "tensorflow lite, arduino, raspberry pi, python",
     descriptionItems: [
@@ -34,4 +34,13 @@ export const projects = [{
     ],
     link: "https://enricosebastian.github.io/expense-tracker-challenge/",
     imgSrc: "/images/expense-tracker.jpg"
+},{
+    mainHeading: "autonomous trash collecting drone system",
+    secondaryHeading: "tensorflow lite, arduino, raspberry pi, python",
+    descriptionItems: [
+        "trained thousands of images of plastic bottles using tensorflow lite and model maker", 
+        "implemented wireless acknowledgement system between drones and base station"
+    ],
+    link: "https://github.com/enricosebastian/thesis",
+    imgSrc: "/images/lindda-control-panel.jpg"
 }];
