@@ -1,6 +1,6 @@
 {
-  fname: "enrico sebastian",
-  lname: "salazar",
-  level: 20,
-  isMale: true,
+  "fname": "enrico sebastian",
+  "lname": "salazar",
+  "level": 20,
+  "isMale": true,
 }
