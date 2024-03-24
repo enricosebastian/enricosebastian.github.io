@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
+    basePath: "/github-pages",
     images: {
-        loader: "akamai",
-        path: "",
-    },
-    assetPrefix: "./",
+        unoptimized: true,
+    }
 };
 
 export default nextConfig;
