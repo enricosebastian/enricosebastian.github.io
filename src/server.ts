@@ -20,7 +20,7 @@ export async function netlifyCommonEngineHandler(request: Request, context: any)
   // if (pathname === '/api/hello') {
   //   return Response.json({ message: 'Hello from the API' });
   // }
-  ​
+
   return await render(commonEngine)
 }
 
