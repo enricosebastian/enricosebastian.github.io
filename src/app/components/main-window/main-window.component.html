@@ -1,4 +1,6 @@
-<div class="container h-100 w-100 border border-5 border-black">
+<div class="container h-100 d-flex flex-column border border-5 border-black">
+
+  <!-- Top bar (fixed height or content-based height) -->
   <div id="retrotopbar" class="row border-bottom border-5 border-black">
     <div class="col d-flex gap-3 py-1">
         <span class="retrotopbar_option fs-4 p-1">File</span> 
@@ -21,7 +23,9 @@
     </div>
   </div>
 
-  <div id="maincontent" class="row p-5">
+  <!-- Main content fills the rest -->
+  <div id="maincontent" class="row p-5 flex-grow-1 border overflow-auto">
     <app-main-app></app-main-app>
   </div>
+
 </div>
