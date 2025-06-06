@@ -1,19 +1,27 @@
 <div class="container border border-5 border-black">
-  <div id="topbar" class="row border-bottom border-5 border-black">
+  <div id="retrotopbar" class="row border-bottom border-5 border-black">
     <div class="col d-flex gap-3 py-1">
-        <span class="topbar_option fs-4 p-1">File</span> 
-        <span class="topbar_option fs-4 p-1">Edit</span>  
-        <span class="topbar_option fs-4 p-1">View</span> 
+        <span class="retrotopbar_option fs-4 p-1">File</span> 
+        <span class="retrotopbar_option fs-4 p-1">Edit</span>  
+        <span class="retrotopbar_option fs-4 p-1">View</span> 
     </div>
 
-    <div class="col py-1 text-end">
-        <span class="topbar_option fs-4 p-1"><button type="button" class="btn btn-primary rounded-circle"></button></span> 
-        <span class="topbar_option fs-4 p-1"><button type="button" class="btn btn-primary rounded-circle"></button></span>  
-        <span class="topbar_option fs-4 p-1"><button type="button" class="btn btn-primary rounded-circle"></button></span> 
+    <div class="col py-1">
+      <div class="d-flex justify-content-end align-items-center h-100 gap-2">
+        <div class="retrotopbar_button ratio ratio-1x1" style="width: 30px;">
+          <button class="btn btn-success rounded-circle"></button>
+        </div>
+        <div class="retrotopbar_button ratio ratio-1x1" style="width: 30px;">
+          <button class="btn btn-warning rounded-circle"></button>
+        </div>
+        <div class="retrotopbar_button ratio ratio-1x1" style="width: 30px;">
+          <button class="btn btn-danger rounded-circle"></button>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div id="maincontent" class="row">
-    Row2
+  <div id="maincontent" class="row p-5">
+    <app-main-app></app-main-app>
   </div>
 </div>
