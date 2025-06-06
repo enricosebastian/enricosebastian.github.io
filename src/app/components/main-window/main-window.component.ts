@@ -3,7 +3,7 @@ import { MainAppComponent } from "../main-app/main-app.component";
 
 @Component({
   selector: 'app-main-window',
-  imports: [MainAppComponent, MainWindowComponent],
+  imports: [MainAppComponent],
   templateUrl: './main-window.component.html',
   styleUrl: './main-window.component.scss'
 })
