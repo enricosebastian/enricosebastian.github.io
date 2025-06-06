@@ -8,5 +8,4 @@ import { MainAppComponent } from "../main-app/main-app.component";
   styleUrl: './main-window.component.scss'
 })
 export class MainWindowComponent {
-
 }
