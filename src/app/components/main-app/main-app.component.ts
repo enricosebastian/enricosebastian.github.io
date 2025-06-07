@@ -26,11 +26,15 @@ export class MainAppComponent {
         let url = event.url.substring(1);
         url = url === '' ? 'home' : url;
 
-        const selected_route = this.sidebarFiles.find(sf => sf.name === url);
+        let selected_route = this.sidebarFiles.find(sf => sf.name === url);
 
         if (!selected_route) {
           console.warn(`Unknown route: ${event.url}`);
-          return;
+          selected_route = this.sidebarFiles.find(sf => sf.name === 'home');
+        }
+
+        if (!selected_route) {
+          throw new Error(`Cannot find route ${event.url} and it does not exist in list of sidebarFiles`);
         }
 
         this.file_header = `${selected_route.name}.${selected_route.fileExtension}`;
