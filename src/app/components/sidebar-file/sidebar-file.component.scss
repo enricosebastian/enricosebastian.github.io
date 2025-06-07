@@ -1,4 +1,17 @@
-.sidebarfile_link {
-    text-decoration: none;
-    color: black;
+.sidebarfile_container {
+    &:hover {
+        border-radius: 5px;
+        background-color: #CDCABE;
+        cursor: pointer;
+
+        .sidebarfile_link {
+            font-weight: bold;
+        }
+    }
+
+    .sidebarfile_link {
+        background-color: none;
+        text-decoration: none;
+        color: black;
+    }
 }
