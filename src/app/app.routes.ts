@@ -1,14 +1,28 @@
 import { Routes } from '@angular/router';
-import { HomePageComponent } from './home-page/home-page.component';
-import { AdminPageComponent } from './admin-page/admin-page.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ErrorComponent } from './pages/error/error.component';
 
 export const routes: Routes = [
   {
-    path: 'home',
-    component: HomePageComponent,
+    path: '',
+    component: HomeComponent,
   },
   {
-    path: 'admin',
-    component: AdminPageComponent,
+    path: 'home',
+    component: HomeComponent,
   },
+  {
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
+  {
+    path: '**',
+    component: ErrorComponent
+  }
 ];
