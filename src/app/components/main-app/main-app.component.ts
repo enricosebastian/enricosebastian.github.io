@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { SidebarFileComponent } from '../sidebar-file/sidebar-file.component';
 import { CommonModule } from '@angular/common';
 import { SidebarFile } from '../../interfaces/sidebarfile.interface';
+import { ModalComponent } from '../modal/modal.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-main-app',
@@ -20,7 +22,7 @@ export class MainAppComponent {
     {name: 'contact', fileExtension: 'cpp', isSelected: false},
   ];
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private modalService: NgbModal) {
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         let url = event.url.substring(1);
@@ -45,5 +47,18 @@ export class MainAppComponent {
         }));
       }
     });
+  }
+
+  handleKeyPress(input: HTMLInputElement) {
+    const value = input.value;
+
+    if (value === '') {
+      return;
+    }
+
+    input.value = '';
+
+    const modalRef = this.modalService.open(ModalComponent, {centered: true});
+    modalRef.componentInstance.message = value;
   }
 }

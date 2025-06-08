@@ -18,7 +18,7 @@
             </div>
             <div class="row border border-5 border-top-0 border-start-0 border-black">
                 <div class="d-flex w-100 h-100">
-                    <span class="fw-bold me-2">></span><input type="text" id="retroconsole_input" class="flex-grow-1 border-0"/>
+                    <span class="fw-bold me-2">></span><input #retroconsole_input id="retroconsole_input" type="text" (keyup.enter)="handleKeyPress(retroconsole_input)" class="flex-grow-1 border-0"/>
                 </div>
             </div>
         </div>
