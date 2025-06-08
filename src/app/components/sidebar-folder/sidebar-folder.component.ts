@@ -11,6 +11,4 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 export class SidebarFolderComponent {
   isCollapsed: boolean = true;
   @Input() name: string = '';
-
-
 }
