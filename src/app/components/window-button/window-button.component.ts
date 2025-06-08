@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class WindowButtonComponent {
   @Input() class: string = '';
+  @Input() width: string = '30px';
 }

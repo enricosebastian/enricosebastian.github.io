@@ -5,6 +5,7 @@ import { WindowButtonComponent } from '../window-button/window-button.component'
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
+  styleUrl: './modal.component.scss',
   imports: [WindowButtonComponent]
 })
 export class ModalComponent {

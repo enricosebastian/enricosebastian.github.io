@@ -1,11 +1,11 @@
-<div class="border border-5 border-black p-1">
+<div class="border border-4 border-black p-1">
     <div class="d-flex justify-content-end align-items-center gap-2">
-        <app-window-button [class]="`btn btn-success`" (click)="activeModal.close()"></app-window-button>
-        <app-window-button [class]="`btn btn-warning`" (click)="activeModal.close()"></app-window-button>
-        <app-window-button [class]="`btn btn-danger`" (click)="activeModal.close()"></app-window-button>
+        <app-window-button [class]="`btn btn-success`" [width]="`25px`" (click)="activeModal.close()"></app-window-button>
+        <app-window-button [class]="`btn btn-warning`" [width]="`25px`" (click)="activeModal.close()"></app-window-button>
+        <app-window-button [class]="`btn btn-danger`" [width]="`25px`" (click)="activeModal.close()"></app-window-button>
     </div>
 </div>
 
-<div class="border border-5 border-black border-top-0 p-2">
+<div class="border border-4 border-black border-top-0 p-2">
     <p>{{this.displayMessage()}}</p>
 </div>
