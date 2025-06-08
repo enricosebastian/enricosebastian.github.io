@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { MainWindowComponent } from './components/main-window/main-window.component';
+import { WindowComponent } from './components/window/window.component';
 
 @Component({
   selector: 'app-root',
-  imports: [MainWindowComponent],
+  imports: [WindowComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

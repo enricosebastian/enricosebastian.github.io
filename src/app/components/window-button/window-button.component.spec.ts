@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainWindowComponent } from './main-window.component';
+import { WindowButtonComponent } from './window-button.component';
 
-describe('MainWindowComponent', () => {
-  let component: MainWindowComponent;
-  let fixture: ComponentFixture<MainWindowComponent>;
+describe('WindowButtonComponent', () => {
+  let component: WindowButtonComponent;
+  let fixture: ComponentFixture<WindowButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MainWindowComponent]
+      imports: [WindowButtonComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MainWindowComponent);
+    fixture = TestBed.createComponent(WindowButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
