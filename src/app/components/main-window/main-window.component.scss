@@ -1,0 +1,14 @@
+.retrotopbar_option {
+    &:hover {
+        border-radius: 5px;
+        background-color: #CDCABE;
+        cursor: pointer;
+
+        font-weight: bold;
+    }
+}
+
+.retrotopbar_button {
+    border-color: black;;
+    border-image: none; /* Explicitly remove border-image */
+}
