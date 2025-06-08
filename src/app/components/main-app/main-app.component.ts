@@ -6,10 +6,11 @@ import { CommonModule } from '@angular/common';
 import { SidebarFile } from '../../interfaces/sidebarfile.interface';
 import { ModalComponent } from '../modal/modal.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SidebarFolderComponent } from '../sidebar-folder/sidebar-folder.component';
 
 @Component({
   selector: 'app-main-app',
-  imports: [RouterOutlet, SidebarFileComponent, CommonModule],
+  imports: [RouterOutlet, SidebarFileComponent, SidebarFolderComponent, CommonModule],
   templateUrl: './main-app.component.html',
   styleUrl: './main-app.component.scss'
 })

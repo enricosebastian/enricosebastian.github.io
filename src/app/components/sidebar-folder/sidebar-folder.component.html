@@ -1,1 +1,13 @@
-<p>sidebar-folder works!</p>
+<div class="text-truncate px-1">
+    <div class="w-100 fs-5" 
+        (click)="isCollapsed = !isCollapsed"
+		[attr.aria-expanded]="!isCollapsed"
+		aria-controls="collapseExample"
+    >
+        <span>{{this.name}}</span>
+    </div>
+
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+        <div>test</div>
+    </div>
+</div>

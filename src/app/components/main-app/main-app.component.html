@@ -6,6 +6,7 @@
                 <ng-container *ngFor="let sidebarFile of sidebarFiles; index as i">
                     <app-sidebar-file [route]="sidebarFile.name"[isSelected]="sidebarFile.isSelected">{{`${sidebarFile.name}.${sidebarFile.fileExtension}`}}</app-sidebar-file>
                 </ng-container>
+                <app-sidebar-folder [name]="`blog`"></app-sidebar-folder>
             </div>
         </div>
         </div>
