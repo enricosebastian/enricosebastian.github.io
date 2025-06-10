@@ -11,12 +11,12 @@
             </div>
         </div>
         </div>
-        <div class="col d-flex flex-column">
+        <div class="col d-flex flex-column h-100">
             <div class="row">
                 <div class="col-4 border border-start-0 border-bottom-0 border-5 border-black fs-4 fw-bold">{{ file_header }}</div>
             </div>
-            <div class="row h-100 border border-black border-5 border-start-0">
-                <router-outlet />
+            <div class="row border border-black border-5 border-start-0 overflow-auto p-0 h-100">
+                <router-outlet class="d-none"/>
             </div>
             <div class="row border border-5 border-top-0 border-start-0 border-black">
                 <div class="d-flex w-100 h-100">

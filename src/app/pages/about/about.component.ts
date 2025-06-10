@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Meta } from '@angular/platform-browser';
 import { PublicPageBase } from '../base/public-page.base';
+import { ImageContainerComponent } from "../../components/image-container/image-container.component";
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [ImageContainerComponent],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  styleUrl: './about.component.scss',
 })
 export class AboutComponent extends PublicPageBase {
   constructor(meta: Meta, title: Title) {
