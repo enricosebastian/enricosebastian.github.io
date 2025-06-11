@@ -9,12 +9,12 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { SidebarFolderComponent } from '../sidebar-folder/sidebar-folder.component';
 
 @Component({
-  selector: 'app-main-app',
+  selector: 'app-ide',
   imports: [RouterOutlet, SidebarFileComponent, SidebarFolderComponent, CommonModule],
-  templateUrl: './main-app.component.html',
-  styleUrl: './main-app.component.scss'
+  templateUrl: './ide.component.html',
+  styleUrl: './ide.component.scss'
 })
-export class MainAppComponent {
+export class IdeComponent {
   file_header: string = 'home.txt';
 
   sidebarFiles: SidebarFile[] = [
