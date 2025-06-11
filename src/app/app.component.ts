@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { WindowComponent } from './components/window/window.component';
+import { WindowButtonComponent } from './components/window-button/window-button.component';
+import { MainAppComponent } from './components/main-app/main-app.component';
 
 @Component({
   selector: 'app-root',
-  imports: [WindowComponent],
+  imports: [WindowButtonComponent, MainAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
