@@ -1,4 +1,4 @@
-<div class="window_container border border-5 border-black position-absolute" style="bottom: -150px; right: 30px;"> 
+<div class="window_container border border-5 border-black position-absolute d-flex flex-column" [ngStyle]="{bottom: this.bottom, right: this.right, left: this.left, top: this.top}"> 
     <div class="border-bottom border-5 border-black p-1">
         <div class="d-flex justify-content-end align-items-center gap-2">
             <app-window-button [class]="`btn btn-success`" [width]="`25px`"></app-window-button>
@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <div class="image_container">
-        <p>image-container works!</p>
+    <div class="image_container flex-grow-1">
+        <img [src]="this.src" class="w-100 h-100 object-fit-cover" />
     </div>
 </div>
