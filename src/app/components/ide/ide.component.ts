@@ -1,17 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { SidebarFileComponent } from '../sidebar-file/sidebar-file.component';
 import { CommonModule } from '@angular/common';
 import { SidebarFile } from '../../interfaces/sidebarfile.interface';
+import { ModalComponent } from '../modal/modal.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SidebarFolderComponent } from '../sidebar-folder/sidebar-folder.component';
 
 @Component({
-  selector: 'app-main-app',
-  imports: [RouterOutlet, SidebarFileComponent, CommonModule],
-  templateUrl: './main-app.component.html',
-  styleUrl: './main-app.component.scss'
+  selector: 'app-ide',
+  imports: [RouterOutlet, SidebarFileComponent, SidebarFolderComponent, CommonModule],
+  templateUrl: './ide.component.html',
+  styleUrl: './ide.component.scss'
 })
-export class MainAppComponent {
+export class IdeComponent {
   file_header: string = 'home.txt';
 
   sidebarFiles: SidebarFile[] = [
@@ -20,7 +23,7 @@ export class MainAppComponent {
     {name: 'contact', fileExtension: 'cpp', isSelected: false},
   ];
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private modalService: NgbModal) {
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         let url = event.url.substring(1);
@@ -45,5 +48,18 @@ export class MainAppComponent {
         }));
       }
     });
+  }
+
+  handleKeyPress(input: HTMLInputElement) {
+    const value = input.value;
+
+    if (value === '') {
+      return;
+    }
+
+    input.value = '';
+
+    const modalRef = this.modalService.open(ModalComponent, {centered: true});
+    modalRef.componentInstance.message = value;
   }
 }

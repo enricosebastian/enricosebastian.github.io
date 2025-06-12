@@ -6,19 +6,25 @@
                 <ng-container *ngFor="let sidebarFile of sidebarFiles; index as i">
                     <app-sidebar-file [route]="sidebarFile.name"[isSelected]="sidebarFile.isSelected">{{`${sidebarFile.name}.${sidebarFile.fileExtension}`}}</app-sidebar-file>
                 </ng-container>
+                <app-sidebar-folder [name]="`my_blog`">
+                </app-sidebar-folder>
             </div>
         </div>
         </div>
-        <div class="col d-flex flex-column">
+        <div class="col d-flex flex-column h-100">
             <div class="row">
                 <div class="col-4 border border-start-0 border-bottom-0 border-5 border-black fs-4 fw-bold">{{ file_header }}</div>
             </div>
-            <div class="row h-100 border border-black border-5 border-start-0">
-                <router-outlet />
+            <div class="row border border-black border-5 border-start-0 overflow-auto p-0 h-100">
+                <div class="h-100 p-5">
+                    <div class="position-relative h-100">
+                        <router-outlet class="d-none"/>
+                    </div>                    
+                </div>
             </div>
             <div class="row border border-5 border-top-0 border-start-0 border-black">
                 <div class="d-flex w-100 h-100">
-                    <span class="fw-bold me-2">></span><input type="text" id="retroconsole_input" class="flex-grow-1 border-0"/>
+                    <span class="fw-bold me-2">></span><input #retroconsole_input id="retroconsole_input" type="text" (keyup.enter)="handleKeyPress(retroconsole_input)" class="flex-grow-1 border-0"/>
                 </div>
             </div>
         </div>

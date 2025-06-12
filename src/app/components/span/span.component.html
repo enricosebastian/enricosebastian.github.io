@@ -1,0 +1,5 @@
+<span>{{`\<${this.tagName}\>`}}</span>
+    <span [ngClass]="{'fw-bold': isBold}">
+        <ng-content/>
+    </span>
+<span>{{`\</${this.tagName}\>`}}</span>

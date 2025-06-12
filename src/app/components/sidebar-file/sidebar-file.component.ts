@@ -10,4 +10,5 @@ import { Component, Input } from '@angular/core';
 export class SidebarFileComponent {
   @Input() route: string = '';
   @Input() isSelected: boolean = false;
+  @Input() isInsideFolder: boolean = false;
 }

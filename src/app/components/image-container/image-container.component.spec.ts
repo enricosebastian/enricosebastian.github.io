@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainWindowComponent } from './main-window.component';
+import { ImageContainerComponent } from './image-container.component';
 
-describe('MainWindowComponent', () => {
-  let component: MainWindowComponent;
-  let fixture: ComponentFixture<MainWindowComponent>;
+describe('ImageContainerComponent', () => {
+  let component: ImageContainerComponent;
+  let fixture: ComponentFixture<ImageContainerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MainWindowComponent]
+      imports: [ImageContainerComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MainWindowComponent);
+    fixture = TestBed.createComponent(ImageContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

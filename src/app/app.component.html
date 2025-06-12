@@ -1,3 +1,26 @@
 <div class="d-flex align-items-center justify-content-center h-100 w-100 p-5">
-  <app-main-window class="d-block h-100 w-100"></app-main-window>
+
+  <div class="container h-100 d-flex flex-column border border-5 border-black">
+    <div id="retrotopbar" class="row border-bottom border-5 border-black">
+      <div class="col d-flex gap-3 py-1">
+          <span class="retrotopbar_option fs-4 p-1">File</span> 
+          <span class="retrotopbar_option fs-4 p-1">Edit</span>  
+          <span class="retrotopbar_option fs-4 p-1">View</span> 
+      </div>
+
+      <div class="col py-1">
+        <div class="d-flex justify-content-end align-items-center h-100 gap-2">
+          <app-window-button [class]="`btn btn-success`"></app-window-button>
+          <app-window-button [class]="`btn btn-warning`"></app-window-button>
+          <app-window-button [class]="`btn btn-danger`"></app-window-button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content fills the rest -->
+    <div id="maincontent" class="row p-5 h-100 overflow-hidden">
+      <app-ide class="p-0 h-100 overflow-hidden"></app-ide>
+    </div>
+  </div>
+
 </div>

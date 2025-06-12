@@ -1,0 +1,10 @@
+.sidebar_folder_label {
+     &:hover {
+        background-color: #CDCABE;
+        cursor: pointer;
+        
+        span {
+            font-weight: bold;
+        }
+    }
+}

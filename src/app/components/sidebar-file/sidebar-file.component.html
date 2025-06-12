@@ -1,5 +1,12 @@
 <div class="sidebarfile_container text-truncate px-1">
-    <a [href]="`/${route}`" class="sidebarfile_link fs-5" [ngClass]="{
-        'fw-bold': isSelected
-    }"><ng-content></ng-content></a>
+    <a [href]="`/${route}`" class="sidebarfile_link" 
+        [ngClass]="{
+            'fw-bold': isSelected,
+            'ps-2': isInsideFolder,
+            'fs-7': isInsideFolder,
+            'fs-5': !isInsideFolder
+        }"
+    >
+        <ng-content></ng-content>
+    </a>
 </div>
