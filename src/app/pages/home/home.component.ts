@@ -3,10 +3,11 @@ import { Meta, Title } from '@angular/platform-browser';
 import { PublicPageBase } from '../base/public-page.base';
 import { ImageContainerComponent } from '../../components/image-container/image-container.component';
 import { ImageSize } from '../../enums/sizes.enums';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @Component({
   selector: 'app-home',
-  imports: [ImageContainerComponent],
+  imports: [ImageContainerComponent, HeaderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
