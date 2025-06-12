@@ -19,6 +19,8 @@ export class ImageContainerComponent {
 
   @Input() zindex: string = '0';
   @Input() imageSize: ImageSize = ImageSize.MEDIUM;
+
+  @Input() hideable: boolean = false;
   
   ImageSize = ImageSize;
 }
