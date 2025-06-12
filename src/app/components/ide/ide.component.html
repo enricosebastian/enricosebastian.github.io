@@ -16,7 +16,11 @@
                 <div class="col-4 border border-start-0 border-bottom-0 border-5 border-black fs-4 fw-bold">{{ file_header }}</div>
             </div>
             <div class="row border border-black border-5 border-start-0 overflow-auto p-0 h-100">
-                <router-outlet class="d-none"/>
+                <div class="h-100 p-5">
+                    <div class="position-relative h-100">
+                        <router-outlet class="d-none"/>
+                    </div>                    
+                </div>
             </div>
             <div class="row border border-5 border-top-0 border-start-0 border-black">
                 <div class="d-flex w-100 h-100">

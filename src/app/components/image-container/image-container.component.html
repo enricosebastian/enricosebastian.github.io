@@ -1,4 +1,18 @@
-<div class="window_container border border-5 border-black position-absolute d-flex flex-column" [ngStyle]="{bottom: this.bottom, right: this.right, left: this.left, top: this.top}"> 
+<div 
+    class="window_container border border-5 border-black position-absolute d-flex flex-column" 
+    [ngClass]="{
+        'large': this.imageSize == ImageSize.LARGE,
+        'medium': this.imageSize == ImageSize.MEDIUM,
+        'small': this.imageSize == ImageSize.SMALL,
+    }"
+    [ngStyle]="{
+        bottom: this.bottom, 
+        right: this.right, 
+        left: this.left,
+        top: this.top,
+        'z-index': this.zindex
+        }"
+> 
     <div class="border-bottom border-5 border-black p-1">
         <div class="d-flex justify-content-end align-items-center gap-2">
             <app-window-button [class]="`btn btn-success`" [width]="`25px`"></app-window-button>
@@ -7,7 +21,7 @@
         </div>
     </div>
 
-    <div class="image_container flex-grow-1">
+    <div class="image_container flex-grow-1 overflow-hidden">
         <img [src]="this.src" class="w-100 h-100 object-fit-cover" />
     </div>
 </div>

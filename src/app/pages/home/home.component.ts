@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { PublicPageBase } from '../base/public-page.base';
+import { ImageContainerComponent } from '../../components/image-container/image-container.component';
+import { ImageSize } from '../../enums/sizes.enums';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [ImageContainerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent extends PublicPageBase {
+  ImageSize = ImageSize;
+
   constructor(meta: Meta, title: Title) {
     super(meta, title);
   }
