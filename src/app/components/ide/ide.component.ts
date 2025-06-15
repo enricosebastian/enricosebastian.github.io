@@ -21,7 +21,7 @@ export class IdeComponent {
     {name: 'home', fileExtension: 'txt', isSelected: false},
     {name: 'career', fileExtension: 'cs', isSelected: false},
     {name: 'education', fileExtension: 'html', isSelected: false},
-    {name: 'about', fileExtension: 'json', isSelected: false},
+    {name: 'projects', fileExtension: 'json', isSelected: false},
     {name: 'contact', fileExtension: 'cpp', isSelected: false},
   ];
 

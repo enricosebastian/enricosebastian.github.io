@@ -5,6 +5,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { EducationComponent } from './pages/education/education.component';
 import { CareerComponent } from './pages/career/career.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 export const routes: Routes = [
   {
@@ -20,12 +21,12 @@ export const routes: Routes = [
     component: CareerComponent,
   },
   {
-    path: 'education',
-    component: EducationComponent
+    path: 'projects',
+    component: ProjectsComponent,
   },
   {
-    path: 'about',
-    component: AboutComponent,
+    path: 'education',
+    component: EducationComponent
   },
   {
     path: 'contact',
