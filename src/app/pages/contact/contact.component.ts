@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { PublicPageBase } from '../base/public-page.base';
 import { Meta, Title } from '@angular/platform-browser';
+import { HeaderComponent } from '../../components/header/header.component';
+import { IconContainerComponent } from '../../components/icon-container/icon-container.component';
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [HeaderComponent, IconContainerComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

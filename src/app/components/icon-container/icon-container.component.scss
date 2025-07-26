@@ -1,0 +1,17 @@
+.clickable {
+    &:hover {
+        opacity: 70%;
+    }
+}
+
+.image {
+    width: 150px;
+
+    @media (max-width: 1000px) {
+        width: 100px;
+    }
+
+    @media (max-width: 800px) {
+        width: 50px;
+    }
+}
