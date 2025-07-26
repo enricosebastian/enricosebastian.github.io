@@ -2,17 +2,50 @@
     background-color: var(--background-color);
 }
 
+.hideable {
+    @media (max-width: 1000px) {
+        display: none !important;
+    }
+}
+
 .small {
     height: 200px;
     width: 200px;
+
+    @media (max-width: 1000px) {
+        position: relative !important;
+        z-index: 0 !important;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+    }
 }
 
 .medium {
     height: 300px;
     width: 300px;
+
+    @media (max-width: 1000px) {
+        position: relative !important;
+        z-index: 0 !important;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+    }
 }
 
 .large {
     height: 500px;
     width: 500px;
+
+    @media (max-width: 1000px) {
+        position: relative !important;
+        z-index: 0 !important;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+    }
 }

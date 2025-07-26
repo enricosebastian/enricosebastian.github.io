@@ -3,6 +3,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { EducationComponent } from './pages/education/education.component';
+import { CareerComponent } from './pages/career/career.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 export const routes: Routes = [
   {
@@ -14,8 +17,16 @@ export const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'about',
-    component: AboutComponent,
+    path: 'career',
+    component: CareerComponent,
+  },
+  {
+    path: 'projects',
+    component: ProjectsComponent,
+  },
+  {
+    path: 'education',
+    component: EducationComponent
   },
   {
     path: 'contact',

@@ -19,7 +19,9 @@ export class IdeComponent {
 
   sidebarFiles: SidebarFile[] = [
     {name: 'home', fileExtension: 'txt', isSelected: false},
-    {name: 'about', fileExtension: 'json', isSelected: false},
+    {name: 'career', fileExtension: 'cs', isSelected: false},
+    {name: 'education', fileExtension: 'html', isSelected: false},
+    {name: 'projects', fileExtension: 'json', isSelected: false},
     {name: 'contact', fileExtension: 'cpp', isSelected: false},
   ];
 
